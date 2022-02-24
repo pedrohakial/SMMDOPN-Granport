@@ -72,7 +72,7 @@ def tabela_clientes():
     return render_template('tabela-clientes.html', cadastro_clientes=cadastro_clientes)
 
 
-@blueprint.route('/cadastro-propostas.html', methods=['GET', 'POST'])
+@cml.route('/cadastro-propostas.html', methods=['GET', 'POST'])
 @login_required
 @admin_required
 def cadastro_propostas():

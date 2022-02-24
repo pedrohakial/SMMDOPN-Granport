@@ -1,7 +1,7 @@
 from flask import Blueprint
 
-blueprint = Blueprint(
-        'cml_blueprint',
+cml = Blueprint(
+        'cml',
     __name__,
     url_prefix='/comercial/',
     template_folder='templates',
