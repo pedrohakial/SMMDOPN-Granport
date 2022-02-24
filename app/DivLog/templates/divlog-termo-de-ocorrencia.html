@@ -1,0 +1,659 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Proex {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+            <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                <li class="breadcrumb-item">
+                    <a href="/index.html">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="/index.html">PROEX</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Termo de Ocorrência</li>
+            </ol>
+        </nav>
+        <div class="d-flex justify-content-between w-100 flex-wrap">
+            <div class="mb-3 mb-lg-0">
+                <h1 class="h4">Termo de Ocorrência</h1>
+                <p class="mb-0">Manual de gestão | Fornecedores de Produtos e Serviços.</p>
+            </div>
+            <div>
+                <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/forms/" target="_blank" class="btn btn-outline-gray"><i class="far fa-question-circle me-1"></i> Documentos PROEX</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4"> 
+            <div class="card border-0 shadow components-section">
+                <div class="card-body">     
+                    <div class="row mb-5">
+                        <div class="col-lg-5 col-sm-5">
+
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Formalização da Reclamação</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Telefone
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                  E-mail
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                <label class="form-check-label" for="defaultCheck3">
+                                  Site
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                                <label class="form-check-label" for="defaultCheck4">
+                                  Outros
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold"> Primeira vez da Ocorrência? </span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                                <label class="form-check-label" for="defaultCheck5">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                                <label class="form-check-label" for="defaultCheck6">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold"> Localidade da Ocorrência </span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                                <label class="form-check-label" for="defaultCheck7">
+                                  SSZ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                                <label class="form-check-label" for="defaultCheck8">
+                                  SPO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                                <label class="form-check-label" for="defaultCheck9">
+                                  SUA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                <label class="form-check-label" for="defaultCheck10">
+                                  MAO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                                <label class="form-check-label" for="defaultCheck11">
+                                  Outra
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Assinou Canhoto?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                                <label class="form-check-label" for="defaultCheck12">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                                <label class="form-check-label" for="defaultCheck13">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Manifestou Ocorrência?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                                <label class="form-check-label" for="defaultCheck14">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
+                                <label class="form-check-label" for="defaultCheck15">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Acionou a Granport?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
+                                <label class="form-check-label" for="defaultCheck16">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
+                                <label class="form-check-label" for="defaultCheck17">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+
+
+                        </div>
+                        <div class="col-lg-5 col-sm-6">
+                            <!-- End of Form -->
+                                <label for="birthday">Data</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                    </span>
+                                    <input data-datepicker="" class="form-control" id="birthday" type="text" placeholder="dd/mm/yyyy" required>                                               
+                                </div>
+                            <!-- Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label for="exampleInputIconRight"> Procurar Empresa</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="exampleInputIconRight" placeholder="Nome da Empresa" aria-label="Procurar Empresa">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>  
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label for="exampleInputIconRight"> Procurar NF-e</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="exampleInputIconRight" placeholder="Nº da NFe" aria-label="Procurar NFe">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>  
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label for="exampleInputIconRight"> Procurar CTe</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="exampleInputIconRight" placeholder="Nº do CTe" aria-label="Procurar CTe">
+                                    <span class="input-group-text" id="basic-addon2">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>  
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Trânsito da Carga</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                                <label class="form-check-label" for="defaultCheck19">
+                                  Origem
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+                                <label class="form-check-label" for="defaultCheck20">
+                                  Destino
+                                </label>
+                            </div>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Cliente Identificou o Problema?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+                                <label class="form-check-label" for="defaultCheck21">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck22">
+                                <label class="form-check-label" for="defaultCheck22">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Acionou a Granport?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+                                <label class="form-check-label" for="defaultCheck23">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+                                <label class="form-check-label" for="defaultCheck24">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Posterior ao Recebimento?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck25">
+                                <label class="form-check-label" for="defaultCheck25">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck26">
+                                <label class="form-check-label" for="defaultCheck26">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Ainda no Veículo?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck27">
+                                <label class="form-check-label" for="defaultCheck27">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck28">
+                                <label class="form-check-label" for="defaultCheck28">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Ato Descarga?</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck29">
+                                <label class="form-check-label" for="defaultCheck29">
+                                  Sim
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck30">
+                                <label class="form-check-label" for="defaultCheck30">
+                                  Não
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="mb-4">
+                                <h1 class="h4">Dados Informações Breve Relato do Ocorrido</h1>
+                            <!-- Form -->
+                            <div class="my-4">
+                                
+                                <textarea class="form-control" placeholder="Escreva aqui..." id="textarea" rows="4"></textarea>
+                            </div>
+                            </div>
+                        </div>
+
+                    <div class="row mb-5 mb-lg-5">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Carga</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Falta</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault1">
+                                <label class="form-check-label" for="flexSwitchCheckDefault1">Avariada</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault5">
+                                <label class="form-check-label" for="flexSwitchCheckDefault5">Acréscimo</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault2">
+                                <label class="form-check-label" for="flexSwitchCheckDefault2">Inclusão</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault3">
+                                <label class="form-check-label" for="flexSwitchCheckDefault3">Cubagem</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault4">
+                                <label class="form-check-label" for="flexSwitchCheckDefault4">Outros</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Containers</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault6">
+                                <label class="form-check-label" for="flexSwitchCheckDefault6">Amassado</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault7">
+                                <label class="form-check-label" for="flexSwitchCheckDefault7">Cortado</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault8">
+                                <label class="form-check-label" for="flexSwitchCheckDefault8">Portas</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault9">
+                                <label class="form-check-label" for="flexSwitchCheckDefault9">Piso</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault10">
+                                <label class="form-check-label" for="flexSwitchCheckDefault10">Sujo</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault11">
+                                <label class="form-check-label" for="flexSwitchCheckDefault11">Furado</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault12">
+                                <label class="form-check-label" for="flexSwitchCheckDefault12">Outros</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Embalagem</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault14">
+                                <label class="form-check-label" for="flexSwitchCheckDefault14">Rasgada</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault15">
+                                <label class="form-check-label" for="flexSwitchCheckDefault15">Amassada</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault16">
+                                <label class="form-check-label" for="flexSwitchCheckDefault16">Cortada</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault17">
+                                <label class="form-check-label" for="flexSwitchCheckDefault17">Arranhada</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault18">
+                                <label class="form-check-label" for="flexSwitchCheckDefault18">Molhada</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault19">
+                                <label class="form-check-label" for="flexSwitchCheckDefault19">Úmida</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault20">
+                                <label class="form-check-label" for="flexSwitchCheckDefault20">Outros</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Veículos</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault21">
+                                <label class="form-check-label" for="flexSwitchCheckDefault21">Incompatível c/ a carga</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault22">
+                                <label class="form-check-label" for="flexSwitchCheckDefault22">Atrasado</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault23">
+                                <label class="form-check-label" for="flexSwitchCheckDefault23">Adiantado</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault24">
+                                <label class="form-check-label" for="flexSwitchCheckDefault24">Avariado</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault25">
+                                <label class="form-check-label" for="flexSwitchCheckDefault25">Sem Lona</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault26">
+                                <label class="form-check-label" for="flexSwitchCheckDefault26">Sem peiação</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault27">
+                                <label class="form-check-label" for="flexSwitchCheckDefault27">Outros</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Motorista</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault28">
+                                <label class="form-check-label" for="flexSwitchCheckDefault28">Sem EPI</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault29">
+                                <label class="form-check-label" for="flexSwitchCheckDefault29">Sem Uniforme</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault30">
+                                <label class="form-check-label" for="flexSwitchCheckDefault30">Indisciplinado</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault31">
+                                <label class="form-check-label" for="flexSwitchCheckDefault31">Não Atende Segurança</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault32">
+                                <label class="form-check-label" for="flexSwitchCheckDefault32">Desrespeitoso</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault33">
+                                <label class="form-check-label" for="flexSwitchCheckDefault33">Outros</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Adicionar Arqui</label>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <!-- End of Form -->
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-5">
+                            <div class="mb-6">
+                                <span class="h3 fw-bold">Tipo de Carga</span>
+                            </div>
+                            <!-- Switch -->                          
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault34">
+                                <label class="form-check-label" for="flexSwitchCheckDefault34"> Eletrônica </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault35">
+                                <label class="form-check-label" for="flexSwitchCheckDefault35"> Siderúgica </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault36">
+                                <label class="form-check-label" for="flexSwitchCheckDefault36">Alimentos</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault37">
+                                <label class="form-check-label" for="flexSwitchCheckDefault37">Máquinas</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault538">
+                                <label class="form-check-label" for="flexSwitchCheckDefault538">Tintas</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault138">
+                                <label class="form-check-label" for="flexSwitchCheckDefault138">Cerâmica</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault238">
+                                <label class="form-check-label" for="flexSwitchCheckDefault238">Tubos</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault338">
+                                <label class="form-check-label" for="flexSwitchCheckDefault338">Móveis</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault438">
+                                <label class="form-check-label" for="flexSwitchCheckDefault438">Químico</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault39">
+                                <label class="form-check-label" for="flexSwitchCheckDefault39">Linha Branca</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault40">
+                                <label class="form-check-label" for="flexSwitchCheckDefault40"> Metalúrgica </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault41">
+                                <label class="form-check-label" for="flexSwitchCheckDefault41"> Farmacéutica </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault42">
+                                <label class="form-check-label" for="flexSwitchCheckDefault42">Combustíveis</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault43">
+                                <label class="form-check-label" for="flexSwitchCheckDefault43">Commodities</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault44">
+                                <label class="form-check-label" for="flexSwitchCheckDefault44">Automobilísticos</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault45">
+                                <label class="form-check-label" for="flexSwitchCheckDefault45">Mat. Construção</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault46">
+                                <label class="form-check-label" for="flexSwitchCheckDefault46">Produtos de Limpeza</label>
+                            </div>
+                            <!-- Switch -->
+                        </div>
+                        <!-- Range slider -->
+                        <div class="col-12 col-md-5">
+                            <div class="mb-6">
+                            <span class="h3 fw-bold">Tipo de Embalagem</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault47">
+                                <label class="form-check-label" for="flexSwitchCheckDefault47">Big Bag</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault48">
+                                <label class="form-check-label" for="flexSwitchCheckDefault48">Sacos</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault49">
+                                <label class="form-check-label" for="flexSwitchCheckDefault49">Caixa</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault50">
+                                <label class="form-check-label" for="flexSwitchCheckDefault50">Lata </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault51">
+                                <label class="form-check-label" for="flexSwitchCheckDefault51">Baldes</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault52">
+                                <label class="form-check-label" for="flexSwitchCheckDefault52">Paletizada</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault53">
+                                <label class="form-check-label" for="flexSwitchCheckDefault53"> Tambores </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault54">
+                                <label class="form-check-label" for="flexSwitchCheckDefault54"> Bombonas </label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault55">
+                                <label class="form-check-label" for="flexSwitchCheckDefault55">Bobinas de Aço</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault56">
+                                <label class="form-check-label" for="flexSwitchCheckDefault56">Bobinas de Madeiras</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault57">
+                                <label class="form-check-label" for="flexSwitchCheckDefault57">Bobinas de Papel</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault58">
+                                <label class="form-check-label" for="flexSwitchCheckDefault58">Amarrados</label>
+                            </div>
+                        </div>
+                        <p></p>
+                            <h1 class="h4">Considerações Finais</h1>
+                            <!-- Form -->
+                            <div class="my-4">
+                                
+                                <textarea class="form-control" placeholder="Escreva aqui..." id="textarea" rows="4"></textarea>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

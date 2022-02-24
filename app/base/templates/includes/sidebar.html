@@ -1,0 +1,660 @@
+
+<nav id="sidebarMenu" class="sidebar d-lg-block bg-gray-800 text-white collapse" data-simplebar>
+    <div class="sidebar-inner px-4 pt-3">
+        <div class="user-card d-flex d-md-none justify-content-between justify-content-md-center pb-4">
+        <div class="d-flex align-items-center">
+            <div class="avatar-lg me-4">
+            <img src="/static/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+            </div>
+            <div class="d-block">
+            <h2 class="h5 mb-3">Hi, Jane</h2>
+            <a href="/page-sign-in.html" class="btn btn-secondary btn-sm d-inline-flex align-items-center">
+                <svg class="icon icon-xxs me-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>            
+                Sign Out
+            </a>
+            </div>
+        </div>
+        <div class="collapse-close d-md-none">
+            <a href="#sidebarMenu" data-bs-toggle="collapse"
+                data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+        </div>
+        </div>
+        <ul class="nav flex-column pt-3 pt-md-0">
+        <li class="nav-item">
+            <a href="/" class="nav-link d-flex align-items-center">
+            <span class="sidebar-icon">
+                <img src="/static/assets/img/brand/light.svg" height="20" width="20" alt="Volt Logo">
+            </span>
+            <span class="mt-1 sidebar-text">PROEX </span>
+            </a>
+        </li>
+            <li class="nav-item">
+            <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-components">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" clip-rule="evenodd"></path></svg>
+
+                </span> 
+                <span class="sidebar-text">DirOp</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'components-' in segment %} show {% endif %}" role="list" id="submenu-components" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'components-buttons' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/comercial.html">
+                            <span class="sidebar-text-contracted">C</span>
+                            <span class="sidebar-text">Comercial</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-notifications' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-notifications.html">
+                            <span class="sidebar-text-contracted">A</span>
+                            <span class="sidebar-text">Agendamento</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-forms' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-forms.html">
+                            <span class="sidebar-text-contracted">D</span>
+                            <span class="sidebar-text">Descarga</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-modals' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-modals.html">
+                            <span class="sidebar-text-contracted">S</span>
+                            <span class="sidebar-text">Saldo Armazém</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-typography' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-typography.html">
+                            <span class="sidebar-text-contracted">S</span>
+                            <span class="sidebar-text">Stuff Planning</span>
+                        </a>
+                    <li class="nav-item {% if 'components-typography' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-typography.html">
+                            <span class="sidebar-text-contracted">T</span>
+                            <span class="sidebar-text">Transporte</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-typography' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-typography.html">
+                            <span class="sidebar-text-contracted">P</span>
+                            <span class="sidebar-text">Pátio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-typography' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-typography.html">
+                            <span class="sidebar-text-contracted">O</span>
+                            <span class="sidebar-text">Operações</span>
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+        <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-divlog">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z" clip-rule="evenodd"></path></svg>
+
+                </span> 
+                <span class="sidebar-text">DivLog </span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'divlog-' in segment %} show {% endif %}" role="list" id="submenu-divlog" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'divlog-os' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-os.html">
+                            <span class="sidebar-text-contracted">OS</span>
+                            <span class="sidebar-text">Tela da O.S.</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-eventos' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-eventos.html">
+                            <span class="sidebar-text-contracted">E</span>
+                            <span class="sidebar-text">Eventos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-adm-e-compras' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-adm-e-compras.html">
+                            <span class="sidebar-text-contracted">ADM</span>
+                            <span class="sidebar-text">ADM & Compras</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-vazio' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-vazio.html">
+                            <span class="sidebar-text-contracted">V</span>
+                            <span class="sidebar-text">Vazio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-cheio' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-cheio.html">
+                            <span class="sidebar-text-contracted">C</span>
+                            <span class="sidebar-text">Cheio</span>
+                        </a>
+                    <li class="nav-item {% if 'divlog-coleta' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-coleta.html">
+                            <span class="sidebar-text-contracted">C</span>
+                            <span class="sidebar-text">Coleta</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-custos' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-custos.html">
+                            <span class="sidebar-text-contracted">C</span>
+                            <span class="sidebar-text">Custos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-termo-de-ocorrencia' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-termo-de-ocorrencia.html">
+                            <span class="sidebar-text-contracted">TO</span>
+                            <span class="sidebar-text">Termo de Ocorrência</span>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item {% if 'divlog-pgto' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-pgto.html">
+                            <span class="sidebar-text-contracted">P</span>
+                            <span class="sidebar-text">Pagamento</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-taxas' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-taxas.html">
+                            <span class="sidebar-text-contracted">T</span>
+                            <span class="sidebar-text">Taxas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-transporte-destino' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-transporte-destino.html">
+                            <span class="sidebar-text-contracted">T-D</span>
+                            <span class="sidebar-text">Transporte Destino</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-pgto-destino' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-pgto-destino.html">
+                            <span class="sidebar-text-contracted">C</span>
+                            <span class="sidebar-text">Pagamento Destino</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'divlog-status' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/divlog-status.html">
+                            <span class="sidebar-text-contracted">S</span>
+                            <span class="sidebar-text">Status da O.S.</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+           <li class="nav-item">
+            <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-comercial">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" clip-rule="evenodd"></path></svg>
+
+                </span> 
+                <span class="sidebar-text">Comercial</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'cml_blueprint' in segment %} show {% endif %}" role="list" id="submenu-comercial" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'cml_blueprint' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('cml_blueprint.cadastro_clientes')}}">
+                            <span class="sidebar-text-contracted">C</span>
+                            <span class="sidebar-text">Cadastro de Cliente</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cml_blueprint' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('cml_blueprint.escopo_de_serviços') }}">
+                            <span class="sidebar-text-contracted">ES</span>
+                            <span class="sidebar-text">Escopo de Serviço</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cadastro-propostas' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('cml_blueprint.cadastro_propostas') }}">
+                            <span class="sidebar-text-contracted">CP</span>
+                            <span class="sidebar-text">Cadastro de Propostas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cml_blueprint' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('cml_blueprint.cml_pipeline') }}">
+                            <span class="sidebar-text-contracted">P</span>
+                            <span class="sidebar-text">Pipeline</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'comercial-crm' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/comercial-crm.html">
+                            <span class="sidebar-text-contracted">CRM</span>
+                            <span class="sidebar-text">CRM</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cml-clientes-e-cargas' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cml-clientes-e-cargas.html">
+                            <span class="sidebar-text-contracted">C&C</span>
+                            <span class="sidebar-text">Clientes & Cargas</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item {% if 'tabela' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('cml_blueprint.tabela_clientes_ajax') }}">
+                            <span class="sidebar-text-contracted">Tb C</span>
+                            <span class="sidebar-text">Tabela de Clientes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <span class="nav-link  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-dashboard">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+                </span> 
+                <span class="sidebar-text">Dashboard</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'dashboard' in segment %} show {% endif %} " role="list" id="submenu-dashboard" aria-expanded="false">
+                <ul class="flex-column nav">
+                <li class="nav-item {% if 'dashboard.html' in segment %} active {% endif %}">
+                    <a href="/dashboard.html" class="nav-link">
+                        <span class="sidebar-text-contracted">O</span>
+                        <span class="sidebar-text">Visão Geral</span>
+                    </a>
+                </li>
+                <li class="nav-item {% if 'dashboard-traffic' in segment %} active {% endif %}">
+                    <a href="/dashboard-traffic-sources.html" class="nav-link">
+                        <span class="sidebar-text-contracted">T</span>
+                        <span class="sidebar-text">Todos os Produtos</span>
+                    </a>
+                </li>
+                <li class="nav-item {% if 'dashboard-app' in segment %} active {% endif %}">
+                    <a href="/dashboard-app-analysis.html" class="nav-link">
+                        <span class="sidebar-text-contracted">P</span>
+                        <span class="sidebar-text">Analise por Produto</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </li>
+           <li class="nav-item">
+            <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-cabotagem">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" clip-rule="evenodd"></path></svg>
+
+                </span> 
+            <span class="sidebar-text">Cabotagem</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'cabotagem-' in segment %} show {% endif %}" role="list" id="submenu-cabotagem" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'cabotagem-dashboard' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-dashboard.html">
+                            <span class="sidebar-text-contracted">C</span>
+                            <span class="sidebar-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cabotagem-agendamento-calendario' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-agendamento-calendario.html">
+                            <span class="sidebar-text-contracted">A</span>
+                            <span class="sidebar-text">Agendamento</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cabotagem-descarga' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-descarga.html">
+                            <span class="sidebar-text-contracted">Da</span>
+                            <span class="sidebar-text">Descarga</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cabotagem-patio-operação' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-patio-operação.html">
+                            <span class="sidebar-text-contracted">Pt OP</span>
+                            <span class="sidebar-text">Pátio Operação</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cabotagem-saldo-armazem' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-saldo-armazem.html">
+                            <span class="sidebar-text-contracted">Sld</span>
+                            <span class="sidebar-text">Saldo Armazém</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cabotagem-stuff-planning' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-stuff-planning.html">
+                            <span class="sidebar-text-contracted">S. Plan</span>
+                            <span class="sidebar-text">Stuff Planning</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cabotagem-tracking-externo' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-tracking-externo.html">
+                            <span class="sidebar-text-contracted">Trck</span>
+                            <span class="sidebar-text">Tracking Externo</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'cabotagem-transporte' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/cabotagem-transporte.html">
+                            <span class="sidebar-text-contracted">T E.</span>
+                            <span class="sidebar-text"> Transporte Externo </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+           <li class="nav-item">
+            <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-operação">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" clip-rule="evenodd"></path>
+  <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/> </svg>
+                </span> 
+            <span class="sidebar-text">Operação</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'operação_blueprint' in segment %} show {% endif %}" role="list" id="submenu-operação" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'operação' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('operação_blueprint.gate_in')}}">
+                            <span class="sidebar-text-contracted">GE</span>
+                            <span class="sidebar-text">Gate Entrada</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'operação' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('operação_blueprint.registro')}}">
+                            <span class="sidebar-text-contracted">R</span>
+                            <span class="sidebar-text">Registro</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'operação' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('operação_blueprint.gate_out')}}">
+                            <span class="sidebar-text-contracted">GS</span>
+                            <span class="sidebar-text">Gate Saída</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'operação' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('operação_blueprint.descarga')}}">
+                            <span class="sidebar-text-contracted">OD</span>
+                            <span class="sidebar-text">Operação Descarga</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'operação' in segment %} active {% endif %}">
+                        <a class="nav-link" href="{{ url_for('operação_blueprint.serviço')}}">
+                            <span class="sidebar-text-contracted">Pt OP</span>
+                            <span class="sidebar-text">Pátio Operação</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item {% if 'kanban.html' in segment %} active {% endif %}">
+            <a href="/kanban.html" class="nav-link d-flex align-items-center justify-content-between">
+                <span>
+                <span class="sidebar-icon">
+                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                </span>
+                <span class="sidebar-text">Kanban</span>
+                </span>
+            </a>
+        </li>
+        <li class="nav-item {% if 'messages.html' in segment %} active {% endif %}">
+            <a href="/messages.html" class="nav-link d-flex align-items-center justify-content-between">
+                <span>
+                <span class="sidebar-icon">
+                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
+                </span>
+                <span class="sidebar-text">Mensagens</span>
+                </span>
+                <span class="badge badge-sm bg-danger badge-pill notification-count">4</span>
+            </a>
+        </li>
+        <li class="nav-item {% if 'users.html' in segment %} active {% endif %}">
+            <a href="/users.html" class="nav-link">
+            <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
+            </span>
+            <span class="sidebar-text">Lista de Usuário</span>
+            </a>
+        </li>
+        <li class="nav-item {% if 'transactions.html' in segment %} active {% endif %}">
+            <a href="/transactions.html" class="nav-link">
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path><path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path></svg>
+                </span>
+                <span class="sidebar-text">Transações</span>
+            </a>
+        </li>
+        <li class="nav-item {% if 'tasks.html' in segment %} active {% endif %}">
+            <a href="/tasks.html" class="nav-link">
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+                </span>
+                <span class="sidebar-text">Lista de Tarefa</span>
+            </a>
+        </li>
+        <li class="nav-item {% if 'settings.html' in segment %} active {% endif %}">
+            <a href="/settings.html" class="nav-link">
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+                </span>
+                <span class="sidebar-text">Configurações</span>
+            </a>
+        </li>
+        <li class="nav-item {% if 'calendar.html' in segment %} active {% endif %}">
+            <a href="/calendar.html" class="nav-link">
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                </span>
+                <span class="sidebar-text">Calendário</span>
+            </a>
+        </li>
+        <li class="nav-item {% if 'map.html' in segment %} active {% endif %}">
+            <a href="/map.html" class="nav-link">
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                </span>
+                <span class="sidebar-text">Mapa</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-app">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd"></path></svg>
+                </span> 
+                <span class="sidebar-text">Tabelas</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'tables-' in segment %} show {% endif %}" role="list" id="submenu-app" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'tables-datatables' in segment %} active {% endif %}">
+                    <a class="nav-link" href="/tables-datatables.html">
+                        <span class="sidebar-text-contracted">D</span>
+                        <span class="sidebar-text">Tables de Dados</span>
+                    </a>
+                    </li>
+                    <li class="nav-item {% if 'tables-bootstrap-tables' in segment %} active {% endif %}">
+                    <a class="nav-link" href="/tables-bootstrap-tables.html">
+                        <span class="sidebar-text-contracted">B</span>
+                        <span class="sidebar-text">Bootstrap Tabelas</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-pages">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path></svg>
+                </span> 
+                <span class="sidebar-text">Exemplo de Páginas</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'page-' in segment %} show {% endif %}" role="list" id="submenu-pages" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'page-pricing' in segment %} active {% endif %}">
+                    <a class="nav-link" href="/page-pricing.html">
+                        <span class="sidebar-text-contracted">P</span>
+                        <span class="sidebar-text">Preço</span>
+                    </a>
+                    </li>
+                    <li class="nav-item {% if 'page-billing' in segment %} active {% endif %}">
+                    <a class="nav-link" href="/page-billing.html">
+                        <span class="sidebar-text-contracted">B</span>
+                        <span class="sidebar-text">Cobranças</span>
+                    </a>
+                    </li>
+                    <li class="nav-item {% if 'page-invoice' in segment %} active {% endif %}">
+                    <a class="nav-link" href="/page-invoice.html">
+                        <span class="sidebar-text-contracted">I</span>
+                        <span class="sidebar-text">NF</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/page-sign-in.html">
+                        <span class="sidebar-text-contracted">S</span>
+                        <span class="sidebar-text">Log in</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/page-sign-up.html">
+                        <span class="sidebar-text-contracted">S</span>
+                        <span class="sidebar-text">Inscrição</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/page-forgot-password.html">
+                        <span class="sidebar-text-contracted">F</span>
+                        <span class="sidebar-text">Forgot password</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/page-reset-password.html">
+                        <span class="sidebar-text-contracted">R</span>
+                        <span class="sidebar-text">Refazer Senha</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/page-lock.html">
+                        <span class="sidebar-text-contracted">L</span>
+                        <span class="sidebar-text">Trava</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/page-404.html">
+                        <span class="sidebar-text-contracted">4</span>
+                        <span class="sidebar-text">404 Not Found</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="/page-500.html">
+                        <span class="sidebar-text-contracted">5</span>
+                        <span class="sidebar-text">500 Not Found</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link  collapsed  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#submenu-components">
+            <span>
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path><path fill-rule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </span> 
+                <span class="sidebar-text">Componentes</span>
+            </span>
+            <span class="link-arrow">
+                <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            </span> 
+            </span>
+            <div class="multi-level collapse {% if 'components-' in segment %} show {% endif %}" role="list" id="submenu-components" aria-expanded="false">
+                <ul class="flex-column nav">
+                    <li class="nav-item {% if 'components-buttons' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-buttons.html">
+                            <span class="sidebar-text-contracted">B</span>
+                            <span class="sidebar-text">Botões</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-notifications' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-notifications.html">
+                            <span class="sidebar-text-contracted">N</span>
+                            <span class="sidebar-text">Notificações</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-forms' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-forms.html">
+                            <span class="sidebar-text-contracted">F</span>
+                            <span class="sidebar-text">Formulários</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-modals' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-modals.html">
+                            <span class="sidebar-text-contracted">M</span>
+                            <span class="sidebar-text">Modais</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {% if 'components-typography' in segment %} active {% endif %}">
+                        <a class="nav-link" href="/components-typography.html">
+                            <span class="sidebar-text-contracted">T</span>
+                            <span class="sidebar-text">Tipographia</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item {% if 'widgets' in segment %} active {% endif %}">
+            <a href="/widgets.html" class="nav-link">
+                <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg>
+                </span>
+                <span class="sidebar-text">Widgets</span>
+            </a>
+        </li>
+        <li role="separator" class="dropdown-divider mt-4 mb-3 border-gray-700"></li>
+        <li class="nav-item">
+            <a href="/"
+                target="_blank" class="nav-link d-flex align-items-center">
+                <span class="sidebar-icon">
+                    <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
+                </span>
+                <span class="sidebar-text">Suporte</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/" 
+                target="_blank" class="nav-link d-flex align-items-center">
+            <span class="sidebar-icon">
+                <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+            </span>            
+            <span class="sidebar-text">Buy now</span>
+            </a>
+        </li>
+        </ul>
+    </div>
+</nav>

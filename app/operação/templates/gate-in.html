@@ -1,0 +1,172 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} GATE IN  {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+            <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Volt</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Forms</li>
+            </ol>
+        </nav>
+        <div class="d-flex justify-content-between w-100 flex-wrap">
+            <div class="mb-3 mb-lg-0">
+                <h1 class="h4">Gate Entrada</h1>
+            </div>
+            <div>
+                <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/forms/" target="_blank" class="btn btn-outline-gray"><i class="far fa-question-circle me-1"></i> Forms Docs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card border-0 shadow components-section">
+                <form method="POST">
+                <div class="card-body">     
+                    <div class="row mb-4">
+                        <div class="col-lg-4 col-sm-6">
+                            {{ form.csrf_token }}
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.caminhão_placa.label }}
+                            {{ form.caminhão_placa(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.tipo_caminhão.label }}
+                            {{ form.tipo_caminhão(id="form-js") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.eixos.label }}
+                            {{ form.eixos(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.reboque_placa.label }}
+                            {{ form.reboque_placa(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.motorista_nome.label }}
+                            {{ form.motorista_nome(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+
+                            <!-- Choice Select -->
+                            <div class="mb-2">
+                            {{ form.motorista_nome.label }}
+                            {{ form.motorista_nome(class="form-control") }}
+                            </div>
+
+                            <label class="my-1 me-2" for="states">Tipo de Reboque:</label>
+                            {{ form.tipo_reboque(id="form-js-1") }}
+                            <!-- Form -->
+                            <div class="my-4">
+                            {{ form.rg.label }}
+                            {{ form.rg(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.cnh.label }}
+                            {{ form.cnh(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.expedição.label }}
+                            {{ form.expedição(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.órgão_emitente.label }}
+                            {{ form.órgão_emitente(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.categoria_cnh.label }}
+                            {{ form.categoria_cnh(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.validade_cnh.label }}
+                            {{ form.validade_cnh(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.tel_celular.label }}
+                            {{ form.tel_celular(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            {{ form.origem.label }}
+                            {{ form.origem(class="form-control") }}
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.destino.label }}
+                            {{ form.destino(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                                {{ form.submit(class="btn btn-lg btn-success animate-up-2") }}
+                        </div>
+                    </div>
+                    <div class="row mb-5 mb-lg-5">
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" id="email" type="email" placeholder="name@company.com" value="{{ current_user.email }}" hidden>   
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" name="username" id="username" type="text" placeholder="" value="{{ current_user.username }}" hidden>
+                    </div>
+                    <div class="row justify-content-between">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script>
+        
+var selectTipoCaminhãoInput = d.querySelector('#form-js-1');
+if(selectTipoCaminhãoInput) {
+    const choices = new Choices(selectTipoCaminhãoInput); 
+}
+
+var selectTipoCaminhãoInput = d.querySelector('#form-js');
+if(selectTipoCaminhãoInput) {
+    const choices = new Choices(selectTipoCaminhãoInput); 
+}
+
+
+</script>
+{% endblock javascripts %}

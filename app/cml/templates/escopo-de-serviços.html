@@ -1,0 +1,625 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Cadastro de Escopo Comercial {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+
+{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+            <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                <li class="breadcrumb-item">
+                    <a href="/index.html">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="/index.html">Páginas</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cadastro do Escopo de Serviços </li>
+            </ol> </nav> <div class="d-flex justify-content-between w-100 flex-wrap">
+            <div class="mb-3 mb-lg-0">
+                <h1 class="h4">Comercial GRANPORT</h1>
+                <p class="mb-0">Tela de Cadastro do Escopo de Serviços.</p>
+            </div>
+            <div>
+                <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/forms/" target="_blank" class="btn btn-outline-gray"><i class="far fa-question-circle me-1"></i> Documento de Cadastro do Escopo de Serviços</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4"> 
+            <div class="card border-0 shadow components-section">
+                <div class="card-body">     
+                <form method="POST">
+                    <div class="row mb-4">
+
+
+                                <label for="exampleInputIconRight">Procurar Empresa</label>
+        
+                                {{ form.empresa_cliente(class_="form-js", name_="{{ form.empresa_cliente}}") }}    
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">Cidade Origem</label>
+
+                                
+
+                                {{ form.cidade_origem(class="form-control") }}
+
+                                
+                            </div>
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">Estado Origem</label>
+
+                                
+
+                                {{ form.estado_origem(class="form-control") }}
+
+                            </div>
+                            <!--End Form -->
+
+                            <!-- Column closing div -->
+                            
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">Cidade Destino</label>
+
+                                
+
+                                {{ form.cidade_destino(class="form-control") }}
+                            </div>
+                            <!--End Form -->
+
+                            
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">Estado Destino</label>
+
+                                
+
+                                {{ form.estado_destino(class="form-control") }}
+                            </div>
+                            <!--End Form -->
+
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">Tipo de Operação</label>
+
+                                     
+
+                                {{ form.tipo_de_operação(class="form-control", id="choicesjs") }}
+                            </div>
+                            <!--End Form -->
+
+
+                            <!-- Form -->
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{form.tipo_embalagem.label }}</label>
+
+                            {{ form.tipo_embalagem(class_="form-control", id="choices-js") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.tipo_de_carga.label }}</label>
+
+                                     
+
+                                {{ form.tipo_de_carga(class_="form-control", id="states") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.quantidade_volumes.label }}</label>
+
+                                     
+
+                                {{ form.quantidade_volumes(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.peso_total_carga.label }}</label>
+
+                                     
+
+                                {{ form.peso_total_carga(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.cubagem_total_carga.label }}</label>
+
+                                     
+
+                                {{ form.cubagem_total_carga(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.dimensões_volume.label }}</label>
+
+                                     
+
+                                {{ form.dimensões_volume(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.carga_excedente.label }}</label>
+
+                                     
+
+                                    {{ form.carga_excedente(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.dimensões_carga_excedente.label }}</label>
+
+                                     
+
+                                {{ form.dimensões_carga_excedente(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.valor_mercadoria.label }}</label>
+
+                                     
+
+                                {{ form.valor_mercadoria(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.seguro_cliente.label }}</label>
+
+                                     
+
+                                {{ form.seguro_cliente(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.seguro_fornecedor.label }}</label>
+
+                                     
+
+                                {{ form.seguro_fornecedor(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.seguro_transportador.label }}</label>
+
+                                     
+
+                                {{ form.seguro_transportador(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.armazenagem.label }}</label>
+
+                                     
+
+                                {{ form.armazenagem(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.maquinário_mov.label }}</label>
+
+                                     
+
+                                {{ form.maquinário_mov(class="form-control", id="implementos-mov-cargas") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.pontos_atenção.label }}</label>
+
+                                     
+
+                                {{ form.pontos_atenção(class="form-control", id="pontos-atenção") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight"> {{ form.remonte_mercadoria.label }}</label>
+
+                                     
+
+                                {{ form.remonte_mercadoria(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.max_remonte.label }}</label>
+
+                                     
+
+                                {{ form.max_remonte(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.transporte_origem.label }}</label>
+
+                                     
+
+                                {{ form.transporte_origem(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight"> {{ form.tipo_transporte.label }}</label>
+
+                                     
+
+                                {{ form.tipo_transporte(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.tipo_veículo.label }}</label>
+
+                                     
+
+                                {{ form.tipo_veículo(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.material_coleta.label }}</label>
+
+                                     
+
+                                {{ form.material_coleta(class="form-control", id="material-coleta") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.peiação.label}}</label>
+
+                                     
+
+                                {{ form.peiação(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight"> {{ form.dessecantes.label }}</label>
+
+                                     
+
+                                {{ form.dessecantes(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.ifyes_dessecantes.label }}</label>
+
+                                     
+
+                                {{ form.ifyes_dessecantes(class="form-control") }}
+                            
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.op_cavalo_atrelado.label }}</label>
+
+                                     
+
+                                {{ form.op_cavalo_atrelado(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.tmp_cavalo_atrelado.label }}</label>
+
+                                     
+
+                                {{ form.tmp_cavalo_atrelado(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.tmp_livre_carregamento.label }}</label>
+
+                                     
+
+                                {{ form.tmp_livre_carregamento(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.ajudantes.label }}</label>
+
+                                     
+
+                                {{ form.ajudantes(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.ifyes_ajudantes.label }}</label>
+
+                                     
+
+                                {{ form.ifyes_ajudantes(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.consolidação_origem.label }}</label>
+
+                                     
+
+                                {{ form.consolidação_origem(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{form.tipo_estufagem.label }}</label>
+
+                                     
+
+                                {{ form.tipo_estufagem(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.qnt_ajudantes.label }}</label>
+
+                                     
+
+                                {{ form.qnt_ajudantes(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.dessecant_cont.label }}</label>
+
+                                     
+
+                                {{ form.dessecant_cont(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.ifyes_dessecant_cont.label }}</label>
+
+                                     
+
+                                {{ form.ifyes_dessecant_cont(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.material_estufagem.label }}</label>
+
+                                     
+
+                                {{ form.material_estufagem(class="form-control", id="material-estufagem") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.tipo_de_container.label }}</label>
+
+                                     
+
+                                {{ form.tipo_de_container(class="form-control", id="tipo-de-container") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.tamanho_container.label }}</label>
+
+                                     
+
+                                {{ form.tamanho_container(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.operação_contratada_destino.label }}</label>
+
+                                     
+
+                                {{ form.operação_contratada_destino(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight"> {{ form.transporte_destino.label }}</label>
+
+                                     
+
+                                {{ form.transporte_destino(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.tipo_coleta_destino.label }}</label>
+
+                                     
+
+                                {{ form.tipo_coleta_destino(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight"> {{ form.tipo_veículo_dest.label }}</label>
+
+                                     
+
+                                {{ form.tipo_veículo_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.período_disposição_dest.label }}</label>
+
+                                     
+
+                                {{ form.período_disposição_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.operação_cavalo_dest.label }}</label>
+
+                                     
+
+                                {{ form.operação_cavalo_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.periodo_cavalo_dest.label }}</label>
+
+                                     
+
+                                {{ form.periodo_cavalo_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight"> {{ form.op_munck.label }}</label>
+
+                                     
+
+                                {{ form.op_munck(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.periodo_op_munck.label }}</label>
+
+                                     
+
+                                {{ form.periodo_op_munck(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.ajudantes_dest.label }}</label>
+
+                                     
+
+                                {{ form.ajudantes_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.ifyes_ajudantes_dest.label }}</label>
+
+                                     
+
+                                {{ form.ifyes_ajudantes_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.conferentes_dest.label }}</label>
+
+                                     
+
+                                {{ form.conferentes_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{ form.ifyes_conferentes_dest.label }}</label>
+
+                                     
+
+                                {{ form.ifyes_conferentes_dest(class="form-control") }}
+                            
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{form.desconsolidação_dest.label }}</label>
+
+                                     
+
+                                {{ form.desconsolidação_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{form.resp_retirada_mercadoria_dest.label }}</label>
+
+                                     
+
+                                {{ form.resp_retirada_mercadoria_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{form.temp_livre_armazenamento_dest.label }}</label>
+
+                                     
+
+                                {{ form.temp_livre_armazenamento_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{form.tipo_desova_dest.label }}</label>
+
+                                     
+
+                                {{ form.tipo_desova_dest(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputIconRight">{{form.ajudantes_dest_desova.label }}</label>
+
+                                     
+
+                                {{ form.ajudantes_dest_desova(class="form-control") }}
+                            
+                            </div>
+                            <div class="mb-4">
+                                {{ form.submit(class="btn btn-primary") }}
+                            </div>
+
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" id="email" type="email" placeholder="name@company.com" value="{{ current_user.email }}" hidden>   
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" name="username" id="username" type="text" placeholder="" value="{{ current_user.username }}" hidden>
+
+                            </div>
+                            <!-- End of Form -->
+                        </form>
+                    </div>
+
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+
+<script>
+
+$(document).ready(function() {
+$('.form-js').select2({
+  placeholder: 'Escolha uma empresa cadastrada',
+  allowClear: true,
+  ajax: {
+    url: '/api/select2',
+    dataType: 'json'
+      }
+});
+
+// multiple
+var selectStatesInputEl = d.querySelector('#choices-js');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+
+// multiple
+var selectStatesInputEl = d.querySelector('#tipo-embalagem');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+// multiple
+var selectStatesInputEl = d.querySelector('#implementos-mov-cargas');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+// multiple
+var selectStatesInputEl = d.querySelector('#pontos-atenção');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+// multiple
+var selectStatesInputEl = d.querySelector('#material-coleta');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+// multiple
+var selectStatesInputEl = d.querySelector('#material-estufagem');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+// multiple
+var selectStatesInputEl = d.querySelector('#tipo-de-container');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+// multiple
+    });
+</script>
+
+
+{% endblock javascripts %}

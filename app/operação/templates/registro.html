@@ -1,0 +1,236 @@
+{% extends "layouts/base.html" %} 
+{% block title %} Registro {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+            <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Registro</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Painel Registro NFe</li>
+            </ol>
+        </nav>
+        <div class="d-flex justify-content-between w-100 flex-wrap">
+            <div class="mb-3 mb-lg-0">
+                <h1 class="h4">Registro NFe</h1>
+            </div>
+            <div>
+                <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/forms/" target="_blank" class="btn btn-outline-gray"><i class="far fa-question-circle me-1"></i> Forms Docs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card border-0 shadow components-section">
+                <div class="card-body">     
+                 <form method="POST">
+                    <div class="row mb-4">
+                        <div class="col-lg-4 col-sm-6">
+                            {{ form.csrf_token }}
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.chave_de_acesso.label }}
+                            {{ form.chave_de_acesso(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label for="data_emissão">Data de Emissão:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                    </span>
+                                    <input data-datepicker=""name="data_emissão", class="form-control" id="data_emissão" type="text" placeholder="dd/mm/aaaa" required>                                               
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.dest_CNPJ.label }}
+                            {{ form.dest_CNPJ(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.dest_nome.label }}
+                            {{ form.dest_nome(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.dest_município.label }}
+                            {{ form.dest_município(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.dest_bairro.label }}
+                            {{ form.dest_bairro(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.dest_cep.label }}
+                            {{ form.dest_cep(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.dest_uf.label }}
+                            {{ form.dest_uf(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.dest_insc_estadual.label }}
+                            {{ form.dest_insc_estadual(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <br></br>
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.fatura.label }}
+                            {{ form.fatura(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.valor.label }}
+                            {{ form.valor(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label for="vencimento">Vencimento da Fatura:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                    </span>
+                                    <input data-datepicker=""name="vencimento", class="form-control" id="vencimento" type="text" placeholder="dd/mm/aaaa" required>                                               
+                                </div>
+                            </div>
+                            <!-- End of Form -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.transportador_nome.label }}
+                            {{ form.transportador_nome(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.resp_frete.label }}
+                            {{ form.resp_frete(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.código_antt.label }}
+                            {{ form.código_antt(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.placa_veículo.label }}
+                            {{ form.placa_veículo(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.trans_uf.label }}
+                            {{ form.trans_uf(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.trans_end.label }}
+                            {{ form.trans_end(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.trans_município.label }}
+                            {{ form.trans_município(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.trans_cnpj.label }}
+                            {{ form.trans_cnpj(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.trans_inscrição_estadual.label }}
+                            {{ form.trans_inscrição_estadual(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.trans_vol.label }}
+                            {{ form.trans_vol(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.trans_espécie.label }}
+                            {{ form.trans_espécie(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <!-- Form -->
+                            <div class="mb-3">
+                            {{ form.volume_peso_bruto.label }}
+                            {{ form.volume_peso_bruto(class="form-control") }}
+                            </div>
+                            <div class="mb-3">
+                            {{ form.volume_peso_líquido.label }}
+                            {{ form.volume_peso_líquido(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                            {{ form.dados_adc.label }}
+                            {{ form.dados_adc(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            {{ form.id_usim5.label }}
+                            {{ form.id_usim5(class="form-control") }}
+                            <!-- End of Form -->
+                            <br></br>
+                                {{ form.submit(class="btn btn-lg btn-success animate-up-2") }}
+                        </div>
+                    </div>
+                    <div class="row mb-5 mb-lg-5">
+                        <div class="col-lg-3 col-md-6">
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" id="email" type="email" placeholder="name@company.com" value="{{ current_user.email }}" hidden>   
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" name="username" id="username" type="text" placeholder="" value="{{ current_user.username }}" hidden>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

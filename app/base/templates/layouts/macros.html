@@ -1,0 +1,20 @@
+{% macro render_select_field(field, placeholder='Selecione ...', label='Selecione uma opção abaixo') %}
+<div class="form-group">
+    <label>{{ label }}</label>
+    <select data-placeholder="{{ placeholder }}" class="select-size-xs" name="{{ field.name }}">
+        <option></option>
+         {% for choice in field.choices %}
+            <option value="{{ choice[0] }}">{{ choice[1] }}</option>
+        {% endfor %}
+    </select>
+    {% if field.errors %}
+    {% for error in field.errors %}
+     <span class="help-block text-danger"><i class="icon-cancel-circle2 position-left"></i>{{ error }}</span>
+    {% endfor %}
+  {% endif %}
+</div>
+{% endmacro %}
+
+
+
+

@@ -1,0 +1,578 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Comercial - Escopo de Serviço {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+            <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                <li class="breadcrumb-item">
+                    <a href="/index.html">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="/index.html">PROEX</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Escopo de Serviço</li>
+            </ol>
+        </nav>
+        <div class="d-flex justify-content-between w-100 flex-wrap">
+            <div class="mb-3 mb-lg-0">
+                <h1 class="h4">PROEX GRANPORT</h1>
+                <p class="mb-0">Tela de cadastro do Escopo de Serviço.</p>
+            </div>
+            <div>
+                <!-- Aqui futuramente terá o link para o manual do PROEX -->
+                <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/forms/" target="_blank" class="btn btn-outline-gray"><i class="far fa-question-circle me-1"></i> Documento Escopo de Serviço</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card border-0 shadow components-section">
+                <div class="card-body">     
+                    <div class="row mb-5 mb-lg-5">
+                        <div class="col-lg-3 col-md-6">
+                            <!-- Radio -->
+                            <fieldset>
+                                <legend class="h6">Tipo de Cliente</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      Indústria de Produtos
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                      Fornecedor de Insumos
+                                    </label>
+                                  </div>
+                            </fieldset>
+                            <!-- End of Radio -->
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Clientes por Segmento Econômico</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                                <label class="form-check-label" for="defaultCheck10">
+                                  Indústria
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                                <label class="form-check-label" for="defaultCheck12">
+                                  Serviços
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                                <label class="form-check-label" for="defaultCheck13">
+                                  Comércio/Varejo
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Seguimentos de Mercado atendidos pelo Embarque</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck31">
+                                <label class="form-check-label" for="defaultCheck31">
+                                  Siderúrgicos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck32">
+                                <label class="form-check-label" for="defaultCheck32">
+                                  Metalúrgicos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck33">
+                                <label class="form-check-label" for="defaultCheck33">
+                                  Varejo
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck34">
+                                <label class="form-check-label" for="defaultCheck34">
+                                  Agronegócio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck35">
+                                <label class="form-check-label" for="defaultCheck35">
+                                  Auto-partes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck36">
+                                <label class="form-check-label" for="defaultCheck36">
+                                  Duas Rodas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck37">
+                                <label class="form-check-label" for="defaultCheck37">
+                                  Linha Branca
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Clientes por Segmento Econômico</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck38">
+                                <label class="form-check-label" for="defaultCheck38">
+                                  Eletroeletrônico
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck39">
+                                <label class="form-check-label" for="defaultCheck39">
+                                  Alimentício
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Porto de Embarque</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck40">
+                                <label class="form-check-label" for="defaultCheck40">
+                                  SSZ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck41">
+                                <label class="form-check-label" for="defaultCheck41">
+                                  SUA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck42">
+                                <label class="form-check-label" for="defaultCheck42">
+                                  FOR
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck43">
+                                <label class="form-check-label" for="defaultCheck43">
+                                  MAO
+                                </label>
+                            </div>
+                            <p></p>
+                            <!-- Checkboxes -->
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Embalagens</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck44">
+                                <label class="form-check-label" for="defaultCheck44">
+                                  Sacos/Sacolas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck45" >
+                                <label class="form-check-label" for="defaultCheck45">
+                                  Big Bag
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck46" >
+                                <label class="form-check-label" for="defaultCheck46">
+                                  Tambor
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck47" >
+                                <label class="form-check-label" for="defaultCheck47">
+                                  Lata
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck48" >
+                                <label class="form-check-label" for="defaultCheck48">
+                                  Aço Plano
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck49" >
+                                <label class="form-check-label" for="defaultCheck49">
+                                  Aço Tubular
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck50" >
+                                <label class="form-check-label" for="defaultCheck50">
+                                  Pallets
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck51" >
+                                <label class="form-check-label" for="defaultCheck51">
+                                  Caixas/Caixotes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck52" >
+                                <label class="form-check-label" for="defaultCheck52">
+                                  Outros
+                                </label>
+                            </div>
+
+                            <div class="mb-3">
+
+                                <p></p>
+                                <span class="h6 fw-bold"> Transporte de cargas químicas e perigosas </span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck11" disabled >
+                                <label class="form-check-label"  for="defaultCheck11">
+                                  Sob consulta com o armador
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Porto de Desembarque</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
+                                <label class="form-check-label" for="defaultCheck18">
+                                  SSZ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
+                                <label class="form-check-label" for="defaultCheck19">
+                                  SUA
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck20">
+                                <label class="form-check-label" for="defaultCheck20">
+                                  FOR
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck21">
+                                <label class="form-check-label" for="defaultCheck21">
+                                  MAO
+                                </label>
+                            </div>
+                            <p></p>
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Tipo de Containers</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck23">
+                                <label class="form-check-label" for="defaultCheck23">
+                                  Dry Box
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck24">
+                                <label class="form-check-label" for="defaultCheck24">
+                                  Reefer
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck25" >
+                                <label class="form-check-label" for="defaultCheck25">
+                                  High Cube
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck26" >
+                                <label class="form-check-label" for="defaultCheck26">
+                                  Open Top
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck27" >
+                                <label class="form-check-label" for="defaultCheck27">
+                                  Outro
+                                </label>
+                            </div>
+                            <p></p>
+                            <div class="mb-3">
+                                <span class="h6 fw-bold">Dimensões dos Containers</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck28">
+                                <label class="form-check-label" for="defaultCheck28">
+                                  20'
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck29" >
+                                <label class="form-check-label" for="defaultCheck29">
+                                  40'
+                                </label>
+                            </div>
+                            <p></p>
+                           
+                            </div>
+                        </div>
+                            <div class="mb-6">
+                                <span class="h2 fw-bold">Origem do trânsito</span>
+                                <p></p>
+
+                                <span class="h4 fw-bold"> Modalidade: Entrega Carga Solta em GPT </span>
+                                
+
+                            </div>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-7">
+
+                             <div class="mb-3">
+                                
+                                <p></p>
+                                <span class="h5 fw-bold"> Local da Entrega </span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck51">
+                                <label class="form-check-label" for="defaultCheck51">
+                                   GPT-SSZ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck52">
+                                <label class="form-check-label" for="defaultCheck52">
+                                   GPT-SPO
+                                </label>
+                            </div>
+                            <p></p>
+                            <span class="h5 fw-bold">Forma de Transporte da Carga</span>
+                            <p></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck53" >
+                                <label class="form-check-label" for="defaultCheck53">
+                                  Container
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck54" >
+                                <label class="form-check-label" for="defaultCheck54">
+                                  Carga Solta
+                                </label>
+                            </div>
+
+                        </div>
+                        <!-- Range slider -->
+                        <div class="col-12 col-md-5">
+                            <p></p>
+                            <span class="h5 fw-bold">Coleta Contratada de carga</span>
+                            <p></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck55" >
+                                <label class="form-check-label" for="defaultCheck55">
+                                  Recebimento carga Armazém GPT
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck56" >
+                                <label class="form-check-label" for="defaultCheck56">
+                                  Fazer CargoSnap
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck57" >
+                                <label class="form-check-label" for="defaultCheck57">
+                                  Conferir
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck58" >
+                                <label class="form-check-label" for="defaultCheck58">
+                                  Retirada Containers Vazio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck59" >
+                                <label class="form-check-label" for="defaultCheck59">
+                                  MD
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck60" >
+                                <label class="form-check-label" for="defaultCheck60">
+                                  ME
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck61" >
+                                <label class="form-check-label" for="defaultCheck61">
+                                  Consolidação da carga X Containers
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck62" >
+                                <label class="form-check-label" for="defaultCheck62">
+                                  Peiação
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck63" >
+                                <label class="form-check-label" for="defaultCheck63">
+                                  Transporte do C.C.
+                                </label>
+                            </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                                                <div class="mb-6">
+                                <span class="h2 fw-bold">Origem do trânsito</span>
+                                <p></p>
+
+                                <span class="h4 fw-bold"> Modalidade: Entrega Carga Solta em GPT </span>
+                                
+
+                            </div>
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-7">
+
+                             <div class="mb-3">
+                                
+                                <p></p>
+                                <span class="h5 fw-bold">Carga Entregue pelo Cliente</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck64">
+                                <label class="form-check-label" for="defaultCheck64">
+                                   GPT-SSZ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck65">
+                                <label class="form-check-label" for="defaultCheck65">
+                                   GPT-SPO
+                                </label>
+                            </div>
+                            <p></p>
+                            <span class="h5 fw-bold">Coleta Contratada de carga</span>
+                            <p></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck66" >
+                                <label class="form-check-label" for="defaultCheck66">
+                                  Container
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck67" >
+                                <label class="form-check-label" for="defaultCheck67">
+                                  Carga Solta
+                                </label>
+                            </div>
+
+                        </div>
+                        <!-- Range slider -->
+                        <div class="col-12 col-md-5">
+                            <p></p>
+
+                             <div class="mb-3">
+                                <span class="h5 fw-bold">Origem do trânsito</span>
+                                <p></p>
+                                <span class="h5 fw-bold">Escopo de Serviço</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck68">
+                                <label class="form-check-label" for="defaultCheck68">
+                                   GPT-SSZ
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck69">
+                                <label class="form-check-label" for="defaultCheck69">
+                                   GPT-SPO
+                                </label>
+                            </div>
+                            <p></p>
+                            <span class="h5 fw-bold">Coleta Contratada de carga</span>
+                            <p></p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck70" >
+                                <label class="form-check-label" for="defaultCheck70">
+                                  Recebimento carga Armazém GPT
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck71" >
+                                <label class="form-check-label" for="defaultCheck71">
+                                  Fazer CargoSnap
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck72" >
+                                <label class="form-check-label" for="defaultCheck72">
+                                  Conferir
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck73" >
+                                <label class="form-check-label" for="defaultCheck73">
+                                  Retirada Containers Vazio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck74" >
+                                <label class="form-check-label" for="defaultCheck74">
+                                  MD
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck75" >
+                                <label class="form-check-label" for="defaultCheck75">
+                                  ME
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck76" >
+                                <label class="form-check-label" for="defaultCheck76">
+                                  Consolidação da carga X Containers
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck77" >
+                                <label class="form-check-label" for="defaultCheck77">
+                                  Peiação
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck78" >
+                                <label class="form-check-label" for="defaultCheck78">
+                                  Transporte do C.C.
+                                </label>
+                            </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

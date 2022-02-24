@@ -1,0 +1,191 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Logística - Cadastro de Booking {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="py-4">
+        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+            <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <svg class="icon icon-xxs" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Volt</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Forms</li>
+            </ol>
+        </nav>
+        <div class="d-flex justify-content-between w-100 flex-wrap">
+            <div class="mb-3 mb-lg-0">
+                <h1 class="h4">Cadastro Booking</h1>
+                <p class="mb-0">Dozens of reusable components built to provide buttons, alerts, popovers, and more.</p>
+            </div>
+            <div>
+                <a href="https://themesberg.com/docs/volt-bootstrap-5-dashboard/components/forms/" target="_blank" class="btn btn-outline-gray"><i class="far fa-question-circle me-1"></i> Forms Docs</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card border-0 shadow components-section">
+                <div class="card-body">     
+                   <form method="POST">
+                    <div class="row mb-4">
+                        <div class="col-lg-4 col-sm-6">
+                            {{ form.csrf_token }}
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.booking_number.label(class="form-label") }}
+                                {{ form.booking_number(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                {{ form.armador.label(class="form-label") }}
+                                {{ form.armador(class="form-control") }}
+                            </div>
+
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                {{ form.navio_viagem.label(class="form-label") }}
+                                {{ form.navio_viagem(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                {{ form.proposta_modal.label(class="form-label") }}
+                                {{ form.proposta_modal(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-3">
+                                {{ form.terminal_vazios.label(class="form-label") }}
+                                {{ form.terminal_vazios(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-2">
+                                {{ form.porto_origem.label(class="form-label") }}
+                                {{ form.porto_origem(class="form-control") }}
+                            </div>
+                            <!-- Form -->
+                            <div class="my-4">
+                                {{ form.porto_destino.label(class="form-label") }}
+                                {{ form.porto_destino(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.mercadoria.label(class="form-label") }}
+                                {{ form.mercadoria(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.quantidade_containers_20.label(class="form-label") }}
+                                {{ form.quantidade_containers_20(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.tipo_containers_20.label(class="form-label") }}
+                                {{ form.tipo_containers_20(class="form-control", id="tipo-de-container-20") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.peso_bruto_containers_20.label(class="form-label") }}
+                                {{ form.peso_bruto_containers_20(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.quantidade_containers_40.label(class="form-label") }}
+                                {{ form.quantidade_containers_40(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.tipo_containers_40.label(class="form-label") }}
+                                {{ form.tipo_containers_40(class="form-control", id="tipo-de-container-40") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="mb-4">
+                                {{ form.peso_bruto_containers_40.label(class="form-label") }}
+                                {{ form.peso_bruto_containers_40(class="form-control") }}
+                            </div>
+                            <!-- End of Form -->
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="mb-3">
+                                <label for="deadline_documento">Deadline Documento:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                    </span>
+                                    <input data-datepicker=""name="deadline_documento", class="form-control" id="deadline_documento" type="text" placeholder="dd/mm/aaaa" required>                                               
+                                </div>
+                            </div>
+                            <!-- Form -->
+                            <div class="mb-3">
+                                <label for="deadline_carga">Deadline Carga:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                    </span>
+                                    <input data-datepicker=""name="deadline_carga", class="form-control" id="deadline_carga" type="text" placeholder="dd/mm/aaaa" required>                                               
+                            </div>
+                            </br>
+                            <div class="mb-3">
+                                {{ form.submit(class="btn btn-lg btn-success animate-up-2") }}
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" id="email" type="email" placeholder="name@company.com" value="{{ current_user.email }}" hidden>   
+                            </div>
+                            <!-- End of Form -->
+                            <!-- Form -->
+                            <div class="my-4">
+                                <input class="form-control" name="username" id="username" type="text" placeholder="" value="{{ current_user.username }}" hidden>
+                            </div>
+                    </div>
+                    <div class="row mb-5 mb-lg-5">
+                    </div>
+                    <div class="row justify-content-between">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script>
+
+// multiple
+var selectStatesInputEl = d.querySelector('#tipo-de-container-40');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+// multiple
+var selectStatesInputEl = d.querySelector('#tipo-de-container-20');
+if(selectStatesInputEl) {
+        const choices = new Choices(selectStatesInputEl);
+}
+
+</script>
+{% endblock javascripts %}
