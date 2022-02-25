@@ -3,7 +3,7 @@ from flask_login import UserMixin
 from sqlalchemy import Binary, Column, Integer, String, DateTime, Float
 from datetime import datetime
 
-from app.base.models import User
+from ..models import User
 from app import db, login_manager
 
 # O Cadastro em si

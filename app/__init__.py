@@ -44,7 +44,7 @@ def create_app(config_name):
     app.register_blueprint(api_blueprint, url_prefix='/api/v1')
 
     from .cml import cml as cml_blueprint
-    app.register_blueprint(cml_blueprint)
+    app.register_blueprint(cml_blueprint, url_prefix='/comercial')
     
 
 

@@ -8,7 +8,8 @@
 
 # The application imports the current user, also all the modules required
 # This import secures the correct user mngmnt
-from flask import jsonify, render_template, redirect, request, url_for
+from flask import jsonify, render_template, redirect, request, url_for, flash, request,\
+        current_app, make_response
 from flask_login import (
     current_user,
     login_required,
@@ -17,7 +18,7 @@ from flask_login import (
 )
 # This retrieves the modules for the forms
 from app import db, login_manager
-from app.cml import blueprint
+from . import cml
 from app.cml.forms import (
    CadastroClientesForm, 
    CadastroContatoClienteForm,
@@ -29,16 +30,13 @@ from app.cml.forms import (
 )
 
 
-from app.decorators import admin_required, permission_required
+from ..decorators import admin_required, permission_required
 
-from flask import render_template, redirect, url_for, request, flash
-from flask_login import login_required, current_user
 from jinja2 import TemplateNotFound
 
 # Here we call from the models each object
 # to use the request for 
 
-from app.base.models import User
 
 from app.cml.models import (
         CadastroClientes,
@@ -50,21 +48,20 @@ from app.cml.models import (
 
 )
 
-from app.base.util import verify_pass
 
 
 
 # Data api for clients 
-@blueprint.route('/data_ajax', methods=['GET', 'POST'])
+@cml.route('/data_ajax', methods=['GET', 'POST'])
 def data_ajax():
     return {'data': [cadastroclientes.to_dict() for cadastroclientes  in CadastroClientes.query]}
 
-@blueprint.route('/tabela-clientes.html')
+@cml.route('/tabela-clientes.html')
 @login_required
 def tabela_clientes_ajax():
     return render_template('tabela-clientes.html')
 
-@blueprint.route('/tabela-clientes.html', methods=['GET'])
+@cml.route('/tabela-clientes.html', methods=['GET'])
 @login_required
 def tabela_clientes():
     cadastro_clientes = CadastroClientes.query
@@ -116,13 +113,13 @@ def list_html():
 
 
 
-@blueprint.route('/cml-html')
+@cml.route('/cml-html')
 @login_required
 def list_html():
     return render_template('list-index.html')
 
 
-@blueprint.route('/escopo-de-serviços.html', methods=['GET','POST'])
+@cml.route('/escopo-de-serviços.html', methods=['GET','POST'])
 @login_required
 def escopo_de_serviços():
     
@@ -323,7 +320,7 @@ def escopo_de_serviços():
 
 
 
-@blueprint.route('/escopo-de-serviço.html', methods=['GET','POST'])
+@cml.route('/escopo-de-serviço.html', methods=['GET','POST'])
 @login_required
 def escopo_de_servicos():
     
@@ -338,7 +335,7 @@ def escopo_de_servicos():
 
 
 
-@blueprint.route('/cadastro-clientes.html', methods=['GET','POST'])
+@cml.route('/cadastro-clientes.html', methods=['GET','POST'])
 @login_required
 def cadastro_clientes():
 
@@ -403,7 +400,7 @@ def cadastro_clientes():
         return render_template("cadastro-clientes.html", form=cadastro_clientes_form)
 
 
-@blueprint.route('/comercial-crm.html')
+@cml.route('/comercial-crm.html')
 @login_required
 def cml_crm():
 
@@ -412,22 +409,22 @@ def cml_crm():
     return render_template('comercial-crm.html', form=crm_form)
 
 
-@blueprint.route('/cadastro-proposta.html')
+@cml.route('/cadastro-proposta.html')
 @login_required
 def cadastro_proposta():
     return render_template('cadastro-proposta.html')
 
-@blueprint.route('/cml-clientes-e-cargas.html')
+@cml.route('/cml-clientes-e-cargas.html')
 @login_required
 def cml_clientes_e_cargas():
     return render_template('cml-clientes-e-cargas.html')
 
-@blueprint.route('/pipeline.html')
+@cml.route('/pipeline.html')
 @login_required
 def cml_pipeline():
     return render_template('pipeline.html')
 
-@blueprint.route('/cml-cadastro-clientes-2.html', methods=['GET','POST'])
+@cml.route('/cml-cadastro-clientes-2.html', methods=['GET','POST'])
 @login_required
 def cml_cadastro_clientes_2():
     # chama o form e requisita ele
