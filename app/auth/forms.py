@@ -1,4 +1,4 @@
-from flask_wtf import FlaskForm
+from flask_wtf import FlaskForm, RecaptchaField
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import DataRequired, Length, Email, Regexp, EqualTo
 from wtforms import ValidationError
@@ -8,9 +8,9 @@ from ..models import User
 class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Length(1, 64),
                                              Email()])
-    password = PasswordField('Password', validators=[DataRequired()])
-    remember_me = BooleanField('Keep me logged in')
-    submit = SubmitField('Log In')
+    password = PasswordField('Senha', validators=[DataRequired()])
+    remember_me = BooleanField('Mantenha-me logado')
+    submit = SubmitField('Entrar')
 
 
 class RegistrationForm(FlaskForm):
@@ -21,8 +21,7 @@ class RegistrationForm(FlaskForm):
         Regexp('^[A-Za-z][A-Za-z0-9_.]*$', 0,
                'Usernames must have only letters, numbers, dots or '
                'underscores')])
-    password = PasswordField('Password', validators=[
-        DataRequired(), EqualTo('password2', message='Passwords must match.')])
+    password = PasswordField('Password', validators=[ DataRequired(), EqualTo('password2', message='As senhas devem ser as mesmas')])
     password2 = PasswordField('Confirm password', validators=[DataRequired()])
     submit = SubmitField('Register')
 
@@ -36,23 +35,23 @@ class RegistrationForm(FlaskForm):
 
 
 class ChangePasswordForm(FlaskForm):
-    old_password = PasswordField('Old password', validators=[DataRequired()])
-    password = PasswordField('New password', validators=[
-        DataRequired(), EqualTo('password2', message='Passwords must match.')])
-    password2 = PasswordField('Confirm new password',
+    old_password = PasswordField('Senha Antiga', validators=[DataRequired()])
+    password = PasswordField('Nova Senha', validators=[
+        DataRequired(), EqualTo('password2', message=' As senhas devem ser iguais.')])
+    password2 = PasswordField('Confime Sua Senha',
                               validators=[DataRequired()])
-    submit = SubmitField('Update Password')
+    submit = SubmitField('Trocar Senha')
 
 
 class PasswordResetRequestForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), Length(1, 64),
                                              Email()])
-    submit = SubmitField('Reset Password')
+    submit = SubmitField('Trocar Senha')
 
 
 class PasswordResetForm(FlaskForm):
     password = PasswordField('New Password', validators=[
-        DataRequired(), EqualTo('password2', message='Passwords must match')])
+        DataRequired(), EqualTo('password2', message=' As senhas devem ser iguais')])
     password2 = PasswordField('Confirm password', validators=[DataRequired()])
     submit = SubmitField('Reset Password')
 
